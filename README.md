@@ -1,113 +1,244 @@
-# E-Commerce Analysis
+# E-Commerce Store Analysis
 
-![GitHub stars](https://img.shields.io/github/stars/ProfASEM/e-commerce-analysis?style=social)
-![License](https://img.shields.io/github/license/ProfASEM/e-commerce-analysis)
+A comprehensive data analysis project for an online store operating during **2023**, focusing on understanding performance, customer behavior, product trends, and building a customer classification model using RFM.
 
-## Overview
+---
 
-**E-Commerce Analysis** is a comprehensive toolkit designed to analyze e-commerce datasets. It helps uncover trends, customer behaviors, sales performance, and other key insights essential for data-driven business decisions. This repository offers an accessible set of scripts, notebooks, and utilities to support data exploration, visualization, and reporting for various e-commerce platforms.
+## 📌 **1. Project Overview**
 
-## Features
+This project analyzes the performance of an e-commerce store throughout **2023**. The workflow includes data cleaning, exploratory data analysis, customer behavior analysis, RFM segmentation, and building a model to classify customers into value-based categories.
 
-- **Data Ingestion**: Load structured and semi-structured e-commerce datasets.
-- **Exploratory Data Analysis (EDA)**: Generate summary statistics and visualizations (e.g., sales distributions, customer segments).
-- **Sales & Trend Analysis**: Identify growth drivers and seasonal trends.
-- **Customer Behavior Analytics**: Analyze repeat purchase behavior, churn, and satisfaction indicators.
-- **Custom Reports**: Export insightful summary tables and figures.
-- **Extensible & Modular**: Easily integrate new datasets or add features as needed.
+---
 
-## Table of Contents
+## 📊 **2. Dataset Source**
 
-- [Getting Started](#getting-started)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+The dataset was obtained from **Kaggle**, then cleaned, processed, and prepared for analysis and machine learning tasks.
 
-## Getting Started
+Repository link: *(current)*
 
-Clone the repository:
+---
 
-```bash
-git clone https://github.com/ProfASEM/e-commerce-analysis.git
-cd e-commerce-analysis
-```
+## 🧹 **3. Data Cleaning**
 
-## Installation
+During the initial inspection, several columns—such as **age**, **gender**, and **region**—were found to contain conflicting and unreliable values. These columns were **removed entirely** to maintain data integrity.
 
-1. Set up a virtual environment (recommended):
+Cleaning steps included:
 
-    ```bash
-    python -m venv venv
-    source venv/bin/activate
-    ```
+* Handling missing values
+* Standardizing formats
+* Removing contradictory columns
+* Creating new features based on customer behavior
 
-2. Install dependencies:
+---
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+## 🔍 **4. Exploratory Data Analysis (EDA)**
 
-*Alternatively, if using conda:*
+### ● Product Analysis
 
-```bash
-conda env create -f environment.yml
-conda activate e-commerce-analysis
-```
+* Identifying top-selling categories
+* Analyzing product trends
+* Understanding purchase frequency and patterns
 
-## Usage
+### ● Customer Analysis
 
-After installing dependencies, run analysis scripts or explore notebooks:
+* Extracting **RFM (Recency, Frequency, Monetary)** metrics
+* Segmenting customers based on purchasing behavior
+* Preparing data for the classification model
 
-```bash
-python analyze_sales.py --input data/sales_data.csv
-```
+---
 
-Or launch Jupyter Lab for exploration:
+## 🤖 **5. Customer Classification Model**
 
-```bash
-jupyter lab
-```
+Using the RFM features, a machine learning model was built to classify customers into **four value segments**:
 
-Sample analysis includes:
+1. High-value customers
+2. Medium-value customers
+3. Low-value customers
+4. At-risk / Lost customers
 
-- Sales performance by category
-- Customer segmentation
-- Monthly sales trends visualization
+This segmentation supports effective marketing strategies and personalized targeting.
 
-## Project Structure
+---
+
+## 🛠️ **6. Tools & Technologies**
+
+### **Python Libraries**
+
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Openpyxl
+
+### **Business Intelligence**
+
+* **Power BI**
+
+  * Main Dashboard
+  * Mobile Version Dashboard
+
+---
+
+## 📈 **7. Key Insights**
+
+* **Tech-related products** dominated sales and outperformed all other categories.
+* Most purchases occurred **midweek**, as displayed in the dashboard.
+* The customer model successfully classified users into **4 distinct value segments**.
+
+---
+
+## 🖼️ **8. Dashboard & Images**
+
+Below are sample visuals from the Power BI dashboard:
+
+### **Main Dashboard Preview**
+
+![Main Dashboard](images/main_dashboard.png)
+
+### **Mobile Version Dashboard**
+
+![Mobile Dashboard](images/mobile_dashboard.png)
+
+### **Power BI File**
+
+You can view or download the full interactive dashboard here:
+[Click to open the Power BI dashboard](powerbi/E-commerce-Analysis.pbix)
+
+---
+
+## 📂 **9. Project Structure**
 
 ```
 e-commerce-analysis/
 │
-├── data/                # Sample and raw datasets
-├── notebooks/           # Analysis notebooks
-├── scripts/             # Core analysis and utility scripts
-├── reports/             # Generated reports and figures
-├── requirements.txt     # Python dependencies
-├── environment.yml      # Conda environment
-└── README.md            # Project documentation
+├── data/                # Raw & cleaned datasets
+├── notebooks/           # Data analysis notebooks
+├── powerbi/             # Power BI dashboards
+├── images/              # Dashboard screenshots
+└── README.md
 ```
-
-## Contributing
-
-Contributions are welcome! Please review the [CONTRIBUTING.md](CONTRIBUTING.md) guidelines before submitting PRs.
-
-- Fork the repo and create your feature branch (`git checkout -b feature/fooBar`)
-- Commit your changes (`git commit -am 'Add feature'`)
-- Push to the branch (`git push origin feature/fooBar`)
-- Open a Pull Request
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-For questions or support, feel free to [open an issue](https://github.com/ProfASEM/e-commerce-analysis/issues) or contact [ProfASEM](https://github.com/ProfASEM) directly.
 
 ---
 
-*Empower your e-commerce business analysis with actionable data insights.*
+## ▶️ **10. How to Run****
+
+1. Install required Python libraries (Pandas, NumPy, sklearn, etc.)
+2. Run the Jupyter Notebook or Python scripts
+3. Open the Power BI file to explore visual insights
+
+---
+
+
+
+# تحليل متجر للتجارة الإلكترونية
+
+مشروع متكامل لتحليل بيانات متجر يعمل بالتجارة الإلكترونية خلال عام **2023**، ويهدف إلى فهم الأداء العام، تحليل سلوك العملاء، دراسة اتجاهات المنتجات، وبناء نموذج لتصنيف العملاء باستخدام RFM.
+
+---
+
+## 📌 **1. وصف المشروع**
+
+يحلل هذا المشروع أداء متجر إلكتروني خلال عام **2023**، ويشمل تنظيف البيانات، إجراء تحليلات استكشافية، تحليل المنتجات والعملاء، استخراج RFM، وبناء نموذج لتصنيف العملاء حسب قيمتهم.
+
+---
+
+## 📊 **2. مصدر البيانات**
+
+تم الحصول على البيانات من منصة **Kaggle**، ثم تمت معالجتها وتنظيفها وتجهيزها للتحليل والنمذجة.
+
+رابط المستودع: *(الحالي)*
+
+---
+
+## 🧹 **3. تنظيف البيانات**
+
+عند مراجعة البيانات، وُجد أن بعض الأعمدة مثل: **العمر، الجنس، المنطقة** تحتوي على قيم متضاربة، لذلك تم **استبعادها بالكامل** لأنها كانت تضر دقة التحليل.
+
+تضمن التنظيف أيضًا:
+
+* معالجة القيم المفقودة
+* توحيد الصيغ
+* إزالة الأعمدة غير الدقيقة
+* إنشاء أعمدة مشتقة من سلوك العملاء
+
+---
+
+## 🔍 **4. التحليل الاستكشافي**
+
+### ● تحليل المنتجات
+
+* تحديد المنتجات والفئات الأكثر مبيعًا
+* دراسة اتجاهات المبيعات
+* تحليل تكرار الشراء
+
+### ● تحليل العملاء
+
+* استخراج قيم **RFM**
+* تقسيم العملاء بناء على سلوك الشراء
+* تجهيز البيانات للنموذج
+
+---
+
+## 🤖 **5. نموذج تصنيف العملاء**
+
+بناء نموذج يعتمد على ميزات RFM لتقسيم العملاء إلى **4 فئات**:
+
+1. عملاء ذوو قيمة عالية
+2. عملاء متوسطو القيمة
+3. عملاء منخفضو القيمة
+4. عملاء على وشك المغادرة أو مفقودون
+
+هذا يساعد في اتخاذ قرارات تسويقية أكثر دقة.
+
+---
+
+## 🛠️ **6. التقنيات المستخدمة**
+
+### **بايثون**
+
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Openpyxl
+
+### **Power BI**
+
+* لوحة رئيسية
+* نسخة خاصة بالجوال
+
+---
+
+## 📈 **7. أهم النتائج**
+
+* سيطرة **قطاع التقنية** على المبيعات مقارنة ببقية المنتجات.
+* معظم عمليات البيع تتم **في وسط الأسبوع** كما هو ظاهر في لوحات التحكم.
+* تم تصنيف العملاء إلى **4 فئات واضحة** تساعد على فهم قيمتهم.
+
+---
+
+## 📂 **8. هيكل المستودع**
+
+```
+e-commerce-analysis/
+│
+├── data/                # البيانات الخام والمنظفة
+├── notebooks/           # دفاتر التحليل
+├── powerbi/             # ملفات Power BI
+├── images/              # صور الداشبورد
+└── README.md
+```
+
+---
+
+## ▶️ **9. كيفية التشغيل**
+
+1. تثبيت مكتبات Python اللازمة
+2. تشغيل الأكواد أو دفاتر Jupyter
+3. فتح ملف Power BI لاستعراض التحليل البصري
+
+---
+
+**شكراً لاهتمامك!**
