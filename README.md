@@ -14,7 +14,7 @@ This project analyzes the performance of an e-commerce store throughout **2023**
 
 The dataset was obtained from **Kaggle**, then cleaned, processed, and prepared for analysis and machine learning tasks.
 
-Repository link: *(current)*
+<a href = "https://www.kaggle.com/datasets/refiaozturk/e-commerce-sales">
 
 ---
 
@@ -28,6 +28,8 @@ Cleaning steps included:
 * Standardizing formats
 * Removing contradictory columns
 * Creating new features based on customer behavior
+<img src="images/cleaned dataset.png">
+
 
 ---
 
@@ -39,12 +41,16 @@ Cleaning steps included:
 * Analyzing product trends
 * Understanding purchase frequency and patterns
 
+<img src="images/visualizations 1.png">
+<img src="images/visualizations 2.png">
+
+
 ### ● Customer Analysis
 
 * Extracting **RFM (Recency, Frequency, Monetary)** metrics
 * Segmenting customers based on purchasing behavior
 * Preparing data for the classification model
-
+<img src="images/Customers RFM and segmetions.png">
 ---
 
 ## 🤖 **5. Customer Classification Model**
@@ -58,6 +64,8 @@ Using the RFM features, a machine learning model was built to classify customers
 
 This segmentation supports effective marketing strategies and personalized targeting.
 
+<img src="images/ML model.png">
+
 ---
 
 ## 🛠️ **6. Tools & Technologies**
@@ -70,6 +78,9 @@ This segmentation supports effective marketing strategies and personalized targe
 * Seaborn
 * Scikit-learn
 * Openpyxl
+
+### **Machine Learning Models**
+* K-means clusters
 
 ### **Business Intelligence**
 
@@ -94,16 +105,14 @@ Below are sample visuals from the Power BI dashboard:
 
 ### **Main Dashboard Preview**
 
-![Main Dashboard](images/main_dashboard.png)
-
-### **Mobile Version Dashboard**
-
-![Mobile Dashboard](images/mobile_dashboard.png)
+<img src="images\Products Insights.png">
+<img src="images\Customers Insights.png"> 
 
 ### **Power BI File**
 
 You can view or download the full interactive dashboard here:
-[Click to open the Power BI dashboard](powerbi/E-commerce-Analysis.pbix)
+[Click to open the Power BI dashboard]
+<a href="dashboard/E-commerce-Analysis.pbix">
 
 ---
 
@@ -114,7 +123,7 @@ e-commerce-analysis/
 │
 ├── data/                # Raw & cleaned datasets
 ├── notebooks/           # Data analysis notebooks
-├── powerbi/             # Power BI dashboards
+├── dashboard/             # Power BI dashboards
 ├── images/              # Dashboard screenshots
 └── README.md
 ```
@@ -147,8 +156,7 @@ e-commerce-analysis/
 
 تم الحصول على البيانات من منصة **Kaggle**، ثم تمت معالجتها وتنظيفها وتجهيزها للتحليل والنمذجة.
 
-رابط المستودع: *(الحالي)*
-
+<a href = "https://www.kaggle.com/datasets/refiaozturk/e-commerce-sales">
 ---
 
 ## 🧹 **3. تنظيف البيانات**
@@ -161,7 +169,7 @@ e-commerce-analysis/
 * توحيد الصيغ
 * إزالة الأعمدة غير الدقيقة
 * إنشاء أعمدة مشتقة من سلوك العملاء
-
+<img src="images/cleaned dataset.png">
 ---
 
 ## 🔍 **4. التحليل الاستكشافي**
@@ -172,12 +180,14 @@ e-commerce-analysis/
 * دراسة اتجاهات المبيعات
 * تحليل تكرار الشراء
 
+<img src="images/visualizations 1.png">
+<img src="images/visualizations 2.png">
 ### ● تحليل العملاء
 
 * استخراج قيم **RFM**
 * تقسيم العملاء بناء على سلوك الشراء
 * تجهيز البيانات للنموذج
-
+<img src="images/Customers RFM and segmetions.png">
 ---
 
 ## 🤖 **5. نموذج تصنيف العملاء**
@@ -190,7 +200,7 @@ e-commerce-analysis/
 4. عملاء على وشك المغادرة أو مفقودون
 
 هذا يساعد في اتخاذ قرارات تسويقية أكثر دقة.
-
+<img src="images/ML model.png">
 ---
 
 ## 🛠️ **6. التقنيات المستخدمة**
@@ -203,6 +213,10 @@ e-commerce-analysis/
 * Seaborn
 * Scikit-learn
 * Openpyxl
+
+* ### **Machine Learning Models**
+* K-means clusters
+
 
 ### **Power BI**
 
@@ -226,12 +240,22 @@ e-commerce-analysis/
 │
 ├── data/                # البيانات الخام والمنظفة
 ├── notebooks/           # دفاتر التحليل
-├── powerbi/             # ملفات Power BI
+├── dashboard/             # ملفات Power BI
 ├── images/              # صور الداشبورد
 └── README.md
 ```
 
 ---
+
+## 📂 **Power BI مرئيات**
+
+<img src="images\Products Insights.png">
+<img src="images\Customers Insights.png"> 
+
+تستطيع تحميل ملف dashboard عن طريق الرابط أدناه
+
+<a href="dashboard/E-commerce-Analysis.pbix">
+
 
 ## ▶️ **9. كيفية التشغيل**
 
