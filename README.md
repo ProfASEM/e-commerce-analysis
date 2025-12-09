@@ -1,144 +1,156 @@
-# E-Commerce Store Analysis
+# 🛒 E-Commerce Store Analysis
 
-A comprehensive data analysis project for an online store operating during **2023**, focusing on understanding performance, customer behavior, product trends, and building a customer classification model using RFM.
+Comprehensive Data Analysis • RFM Segmentation • Machine Learning • Power BI Dashboard
 
----
+## 1. Project Overview
 
-## 📌 **1. Project Overview**
+This project analyzes the performance of an e-commerce store during 2023.
+It covers data cleaning, exploratory analysis, customer profiling, RFM segmentation, and building a machine learning model to classify customers.
 
-This project analyzes the performance of an e-commerce store throughout **2023**. The workflow includes data cleaning, exploratory data analysis, customer behavior analysis, RFM segmentation, and building a model to classify customers into value-based categories.
+The project follows a complete end-to-end analytics workflow used in real e-commerce environments.
 
----
+## 2. Dataset Source
 
-## 📊 **2. Dataset Source**
+Dataset from Kaggle:
+https://www.kaggle.com/datasets/refiaozturk/e-commerce-sales
 
-The dataset was obtained from **Kaggle**, then cleaned, processed, and prepared for analysis and machine learning tasks.
+The data was cleaned, processed, and prepared for analysis and ML tasks.
 
-<a href = "https://www.kaggle.com/datasets/refiaozturk/e-commerce-sales">
+## 3. Data Cleaning
 
----
-
-## 🧹 **3. Data Cleaning**
-
-During the initial inspection, several columns—such as **age**, **gender**, and **region**—were found to contain conflicting and unreliable values. These columns were **removed entirely** to maintain data integrity.
+During initial inspection, several fields such as age, gender, and region contained unrealistic or contradictory values.
+These columns were entirely removed to ensure data integrity.
 
 Cleaning steps included:
 
-* Handling missing values
-* Standardizing formats
-* Removing contradictory columns
-* Creating new features based on customer behavior
+#### Handling missing values
+
+#### Removing inconsistent columns
+
+#### Standardizing data types
+
+#### Filtering unreliable rows
+
+#### Creating RFM features
+
 <img src="images/cleaned dataset.png">
 
+## 4. Exploratory Data Analysis (EDA)
 
----
+#### Product Insights
 
-## 🔍 **4. Exploratory Data Analysis (EDA)**
+Top-selling categories
 
-### ● Product Analysis
+Revenue patterns
 
-* Identifying top-selling categories
-* Analyzing product trends
-* Understanding purchase frequency and patterns
+Frequency of purchases
 
-<img src="images/visualizations 1.png">
-<img src="images/visualizations 2.png">
+Trend analysis
 
+<img src="images/visualizations 1.png"> <img src="images/visualizations 2.png">
 
-### ● Customer Analysis
+#### Customer Insights (RFM)
 
-* Extracting **RFM (Recency, Frequency, Monetary)** metrics
-* Segmenting customers based on purchasing behavior
-* Preparing data for the classification model
+RFM metrics were calculated:
+
+**Recency** – how recently the customer purchased
+
+**Frequency** – how often they buy
+
+**Monetary** – how much they spend
+
+These were used for segmentation and ML modeling.
+
 <img src="images/Customers RFM and segmetions.png">
----
 
-## 🤖 **5. Customer Classification Model**
+## 5. Customer Classification Model
 
-Using the RFM features, a machine learning model was built to classify customers into **four value segments**:
+A machine learning model was built using RFM data to classify customers into:
 
-1. High-value customers
-2. Medium-value customers
-3. Low-value customers
-4. At-risk / Lost customers
+#### High-value customers
 
-This segmentation supports effective marketing strategies and personalized targeting.
+#### Medium-value customers
+
+#### Low-value customers
+
+#### At-risk / Lost customers
+
+Algorithm used:
+
+#### K-Means Clustering
 
 <img src="images/ML model.png">
 
----
+This segmentation supports targeting strategies and customer retention planning.
 
-## 🛠️ **6. Tools & Technologies**
+## 6. Tools & Technologies
+### Python
 
-### **Python Libraries**
+### Pandas
 
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* Openpyxl
+### NumPy
 
-### **Machine Learning Models**
-* K-means clusters
+### Matplotlib
 
-### **Business Intelligence**
+### Seaborn
 
-* **Power BI**
+### Scikit-learn
 
-  * Main Dashboard
-  * Mobile Version Dashboard
+### Openpyxl
 
----
+### Business Intelligence
 
-## 📈 **7. Key Insights**
+### Power BI (Desktop + Mobile Layouts)
 
-* **Tech-related products** dominated sales and outperformed all other categories.
-* Most purchases occurred **midweek**, as displayed in the dashboard.
-* The customer model successfully classified users into **4 distinct value segments**.
+### Machine Learning
 
----
+### K-Means Clustering
 
-## 🖼️ **8. Dashboard & Images**
+### Feature Scaling
 
-Below are sample visuals from the Power BI dashboard:
+## 7. Key Insights
 
-### **Main Dashboard Preview**
+-Technology products dominated 2023 sales.
 
-<img src="images\Products Insights.png">
-<img src="images\Customers Insights.png"> 
+-Sales peaked midweek based on dashboard KPIs.
 
-### **Power BI File**
+-Customer segmentation revealed 4 distinct clusters.
 
-You can view or download the full interactive dashboard here:
-[Click to open the Power BI dashboard]
-<a href="dashboard/E-commerce-Analysis.pbix">
+-High-value customers are responsible for a large share of revenue.
 
----
+A considerable portion of customers are at-risk and need engagement strategies.
 
-## 📂 **9. Project Structure**
+## 8. Dashboard & Visuals
+Main Dashboard
+<img src="images/Products Insights.png"> <img src="images/Customers Insights.png">
+Power BI File
 
-```
-e-commerce-analysis/
-│
-├── data/                # Raw & cleaned datasets
-├── notebooks/           # Data analysis notebooks
-├── dashboard/             # Power BI dashboards
-├── images/              # Dashboard screenshots
-└── README.md
-```
+Interactive dashboard (.pbix):
+dashboard/E-commerce-Analysis.pbix
 
----
+## 9. Project Structure
+e-commerce-analysis/<br>
+│<br>
+├── data/ <br>               # Raw and cleaned datasets
+├── notebooks/<br>           # Jupyter notebooks (EDA + ML)
+├── dashboard/    <br>       # Power BI dashboards
+├── images/           <br>   # Screenshots used in README
+└── README.md<br>
 
-## ▶️ **10. How to Run****
+## 10. How to Run
 
-1. Install required Python libraries (Pandas, NumPy, sklearn, etc.)
-2. Run the Jupyter Notebook or Python scripts
-3. Open the Power BI file to explore visual insights
+Install dependencies:
 
----
+pip install pandas numpy scikit-learn matplotlib seaborn openpyxl
 
 
+Run the Jupyter Notebook inside the notebooks/ folder.
+
+Open the Power BI file in the dashboard/ folder.
+
+### Contact
+
+LinkedIn: https://www.linkedin.com/in/asem-haij-9797562a8
 
 # تحليل متجر للتجارة الإلكترونية
 
