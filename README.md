@@ -61,7 +61,7 @@ RFM metrics were calculated:
 
 These were used for segmentation and ML modeling.
 
-<img src="images/Customers RFM and segmetions.png">
+<img src="images/Customer RFM and segmetions.png">
 
 ## 5. Customer Classification Model
 
@@ -199,7 +199,7 @@ LinkedIn: https://www.linkedin.com/in/asem-haij-9797562a8
 * استخراج قيم **RFM**
 * تقسيم العملاء بناء على سلوك الشراء
 * تجهيز البيانات للنموذج
-<img src="images/Customers RFM and segmetions.png">
+<img src="images/Customer RFM and segmetions.png">
 ---
 
 ## 🤖 **5. نموذج تصنيف العملاء**
