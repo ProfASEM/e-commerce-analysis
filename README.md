@@ -33,7 +33,7 @@ Cleaning steps included:
 
 #### Creating RFM features
 
-<img src="images/cleaned dataset.png">
+<img src="images/clenead dataset.png">
 
 ## 4. Exploratory Data Analysis (EDA)
 
